@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TemperatureInput from './components/TemperatureInput';
+import BoilingVerdict from './components/BoilingVerdict';
+// import './App.css';
 
 function toCelsius(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
@@ -19,7 +21,7 @@ function tryConvert(temperature, convert) {
   return rounded.toString();
 }
 
-class Calculator extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
