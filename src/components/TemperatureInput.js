@@ -1,6 +1,8 @@
+import React from 'react';
+
 const scaleNames = {
-  c: 'Celsius',
-  f: 'Fahrenheit'
+	c: 'Celsius',
+	f: 'Fahrenheit',
 };
 
 const TemperatureInput = props => {
@@ -12,10 +14,10 @@ const TemperatureInput = props => {
 			</legend>
 			<input
 				value={temperature}
-				onChange={(e) => onChange(e.target.value, scale)}
+				onChange={e => onChange(e.target.value, scale)}
 			/>
 		</fieldset>
 	);
-}
+};
 
 export default TemperatureInput;
